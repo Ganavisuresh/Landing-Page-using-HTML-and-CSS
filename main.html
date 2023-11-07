@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mysore palace</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./images/logoo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="text-box">
+                <h2>Mysore Palace<br><span>(Amba Vilas Palace)</span></h2>
+                <p> It is located in Mysore, Karnataka, India.<br> It used to be the official residence of the<br> Wadiyar dynasty and the seat of the Kingdom<br> of Mysore. <br>The palace is in the centre of Mysore,and faces<br> the Chamundi Hills eastward Mysore is <br>commonly described as the'City of the Palaces'.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div class="img-box">
+                <img src="./images/image.jpg" class="palace">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/img.jpg" onclick="imgSlider('./images/img.jpg');changeCircleColor('#000000')"></li>
+            <li><img src="./images/img1.jpg" onclick="imgSlider('./images/image2.png');changeCircleColor('#87CEEB')"></li>
+            <li><img src="./images/img2.jpg" onclick="imgSlider('./images/image1.png');changeCircleColor('#ffdc4c')"></li>
+            </ul>
+        <ul class="social">
+            <li><a href="#"><img src="./images/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/instagram.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.palace').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color
+        }
+    </script>
+</body>
+</html>
